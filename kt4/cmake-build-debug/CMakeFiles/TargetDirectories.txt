@@ -1,0 +1,3 @@
+/Users/alt/Desktop/CPP/kt4/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/alt/Desktop/CPP/kt4/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/alt/Desktop/CPP/kt4/cmake-build-debug/CMakeFiles/kt4.dir
