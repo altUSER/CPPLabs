@@ -37,7 +37,7 @@ int main() {
 
             printf("| %5.2lf | %10.7lf | ", (x + n * 4), y);
 
-            for (short h=11+y*10; h > 0; h--)
+            for (short h=11+y*5; h > 0; h--)
                 printf(" ");
             printf("*\n");
 
