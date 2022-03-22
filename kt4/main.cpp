@@ -6,6 +6,47 @@ bool checkPart(int num) {
     return num % 3 == 0;
 }
 
+void printArr(int *arr, int size){
+    for (int i = 0; i < size; i++){
+        printf("%d ", arr[i]);
+    }
+}
+
+void invert(int *arr, int size){
+    int temp;
+    for (int i = 0; i<size/2; i++){
+        temp = arr[i];
+        arr[i] = arr[size-1-i];
+        arr[size-1-i] = temp;
+    }
+}
+
+void decStat(int *arr, int size, int dec){
+    int min = arr[0];
+    int max = arr[0];
+    int sum, count;
+    for (int i = 0; i < size; i++){
+        if (arr[i]%dec==0 and arr[i]!=0) {
+            count++;
+            sum += arr[i];
+            if (arr[i] < min) {
+                min = arr[i];
+            }
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+    }
+    printf("Статистика для значений, кратных %d\nmin: %d\nmax: %d\navg: %d", dec, min, max, sum/count);
+}
+
+void showAddr(int *arr, int size){
+    printf("Адреса переменных массива:\n");
+    for (int i = 0; i < size; i++){
+        printf("\n0x%X", &arr[i]);
+    }
+}
+
 int main() {
     system("chcp 65001");
     setlocale(LC_ALL, "Russian");
@@ -40,8 +81,8 @@ int main() {
             printf("Задайте шаг для заполнения массива\n>");
             scanf("%d", &step);
 
+            int val = step;
             for (int i = 0; i < size; i++){
-                int val = step;
                 arr1[i] = val;
                 val += step;
             }
@@ -52,12 +93,40 @@ int main() {
             break;
         }
 
-        int pos = 0;
-        for (int i = 0; i < size; i++) {
+        printf("Исходный массив:\n");
+        printArr(arr1, size);
+        printf("\n");
+
+        for (int i = 0, pos = 0; i < size; i++) {
             if (checkPart(arr1[i])) {
                 arr2[pos] = arr1[i];
+                pos++;
             }
         }
+
+        printf("Измененный массив с числами, кратными 3:\n");
+        printArr(arr2, size);
+        printf("\n\n\n");
+
+
+        invert(arr1, size);
+        printf("Исходный массив с перестановкой:\n");
+        printArr(arr1, size);
+        printf("\n");
+        showAddr(arr1, size);
+        printf("\n");
+        decStat(arr1, size, 5);
+        printf("\n\n");
+
+        invert(arr2, size);
+        printf("Измененный массив с перестановкой:\n");
+        printArr(arr2, size);
+        printf("\n");
+        showAddr(arr2, size);
+        printf("\n");
+        decStat(arr2, size, 5);
+        printf("\n\n");
+
 
     } while (extcode == 0);
 }
