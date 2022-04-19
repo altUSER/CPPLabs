@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: kt5
+# Project: kt6
 # Configurations: Debug
 # =============================================================================
 
@@ -39,47 +39,47 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /Users/alt/Desktop/CPP/kt5/cmake-build-debug/
+cmake_ninja_workdir = /Users/alt/Desktop/CPP/kt6/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target kt5
+# Object build statements for EXECUTABLE target kt6
 
 
 #############################################
-# Order-only phony target for kt5
+# Order-only phony target for kt6
 
-build cmake_object_order_depends_target_kt5: phony || CMakeFiles/kt5.dir
+build cmake_object_order_depends_target_kt6: phony || CMakeFiles/kt6.dir
 
-build CMakeFiles/kt5.dir/main.cpp.o: CXX_COMPILER__kt5_Debug /Users/alt/Desktop/CPP/kt5/main.cpp || cmake_object_order_depends_target_kt5
-  DEP_FILE = CMakeFiles/kt5.dir/main.cpp.o.d
+build CMakeFiles/kt6.dir/main.cpp.o: CXX_COMPILER__kt6_Debug /Users/alt/Desktop/CPP/kt6/main.cpp || cmake_object_order_depends_target_kt6
+  DEP_FILE = CMakeFiles/kt6.dir/main.cpp.o.d
   FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -std=gnu++14
-  OBJECT_DIR = CMakeFiles/kt5.dir
-  OBJECT_FILE_DIR = CMakeFiles/kt5.dir
-  TARGET_COMPILE_PDB = CMakeFiles/kt5.dir/
-  TARGET_PDB = kt5.pdb
+  OBJECT_DIR = CMakeFiles/kt6.dir
+  OBJECT_FILE_DIR = CMakeFiles/kt6.dir
+  TARGET_COMPILE_PDB = CMakeFiles/kt6.dir/
+  TARGET_PDB = kt6.pdb
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target kt5
+# Link build statements for EXECUTABLE target kt6
 
 
 #############################################
-# Link the executable kt5
+# Link the executable kt6
 
-build kt5: CXX_EXECUTABLE_LINKER__kt5_Debug CMakeFiles/kt5.dir/main.cpp.o
+build kt6: CXX_EXECUTABLE_LINKER__kt6_Debug CMakeFiles/kt6.dir/main.cpp.o
   FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
-  OBJECT_DIR = CMakeFiles/kt5.dir
+  OBJECT_DIR = CMakeFiles/kt6.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = CMakeFiles/kt5.dir/
-  TARGET_FILE = kt5
-  TARGET_PDB = kt5.pdb
+  TARGET_COMPILE_PDB = CMakeFiles/kt6.dir/
+  TARGET_FILE = kt6
+  TARGET_PDB = kt6.pdb
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/alt/Desktop/CPP/kt5/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/alt/Desktop/CPP/kt6/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -90,7 +90,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/alt/Desktop/CPP/kt5/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/alt/Desktop/CPP/kt5 -B/Users/alt/Desktop/CPP/kt5/cmake-build-debug
+  COMMAND = cd /Users/alt/Desktop/CPP/kt6/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/alt/Desktop/CPP/kt6 -B/Users/alt/Desktop/CPP/kt6/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -106,9 +106,9 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 #############################################
-# Folder: /Users/alt/Desktop/CPP/kt5/cmake-build-debug
+# Folder: /Users/alt/Desktop/CPP/kt6/cmake-build-debug
 
-build all: phony kt5
+build all: phony kt6
 
 # =============================================================================
 # Built-in targets
